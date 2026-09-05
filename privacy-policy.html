@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>深蹲伙伴（SquatPal）隐私政策</title>
+  <style>
+    :root {
+      --accent: #1f9e66;
+      --accent-deep: #0f754a;
+      --ink: #173428;
+      --secondary: #6b8778;
+      --accent-light: #e0f5eb;
+      --bg-top: #e3f5eb;
+      --bg-bottom: #fafffe;
+      --danger: #f58c2e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .app-title {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .app-title .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--accent-deep);
+    }
+    .app-title .dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px var(--accent-light);
+    }
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      margin: 18px 0 10px;
+    }
+    .lead {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+    .switch {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 40px;
+      background: #fff;
+      border-radius: 999px;
+      padding: 4px;
+      box-shadow: 0 4px 14px rgba(23, 52, 40, .08);
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .switch button {
+      border: 0; background: transparent;
+      font-size: 14px; font-weight: 600;
+      padding: 8px 22px; border-radius: 999px;
+      color: var(--secondary); cursor: pointer;
+      font-family: inherit;
+    }
+    .switch button.active { background: var(--accent); color: #fff; }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 20px rgba(23, 52, 40, .06);
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+    .card p {
+      font-size: 15px;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+    .effective {
+      text-align: center;
+      font-size: 13px;
+      color: var(--secondary);
+      opacity: .85;
+      margin-top: 30px;
+    }
+    [lang="en"] { display: none; }
+    .notif {
+      text-align: center;
+      font-size: 13px;
+      color: var(--secondary);
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="app-title">
+      <span class="logo"><span class="dot"></span>深蹲伙伴 · SquatPal</span>
+    </div>
+
+    <h1>隐私政策</h1>
+    <p class="lead">我们深知隐私的重要性，并承诺透明说明本 App 如何收集、使用、存储与保护您的数据。</p>
+
+    <!-- 语言切换（内容一致，仅语言不同） -->
+    <div class="switch" role="tablist">
+      <button onclick="setLang('zh')" id="btn-zh" class="active">中文</button>
+      <button onclick="setLang('en')" id="btn-en">English</button>
+    </div>
+
+    <!-- ================= 中文正文 ================= -->
+    <div lang="zh">
+      <div class="card">
+        <h2>我们收集哪些数据</h2>
+        <p>摄像头画面：用于实时识别深蹲动作并自动计数。画面仅在设备本地处理，不会上传、保存或分享，处理完成后即被丢弃。</p>
+        <p>训练记录：包括训练次数、时长、动作深度、平均节奏等，默认仅保存在您的设备上，用于展示统计与成就。</p>
+        <p>身体数据：若您在设置中填写体重，仅保存在本设备，用于估算卡路里消耗，不会上传。</p>
+        <p>iCloud 数据：若您开启 iCloud 同步，训练记录会同步到您自己的 iCloud 私有空间，用于多设备间恢复与共享。</p>
+        <p>购买与订阅信息：若您购买订阅或买断版，支付由 Apple App Store 处理，我们仅获取您已购买的方案状态，不接触支付信息。</p>
+        <p>Apple 健康数据：仅当您开启写入时，才将训练时长与卡路里写入 Apple 健康；仅写入，不回读您的历史数据。</p>
+      </div>
+
+      <div class="card">
+        <h2>数据如何使用</h2>
+        <p>所有数据仅用于向您提供训练计数、统计、成就与记录展示等功能，并据此改善 App 体验。我们不会将您的数据用于广告或用户画像分析。</p>
+      </div>
+
+      <div class="card">
+        <h2>数据共享与传输</h2>
+        <p>我们不会向任何第三方出售、出租或共享您的数据。数据同步仅在您明确开启时发生，并通过 Apple iCloud 的私有空间进行，我们无法访问您的同步数据。</p>
+        <p>若法律法规或有权机关要求，我们可能依法披露必要信息，但会严格遵循适用法律并尽量缩小披露范围。</p>
+      </div>
+
+      <div class="card">
+        <h2>数据存储与安全</h2>
+        <p>训练记录与设置默认仅存储在本设备，受 iOS 系统与设备安全机制保护。开启同步后，iCloud 数据由 Apple 云服务的安全机制保护。</p>
+        <p>摄像头画面经本地处理后被即时丢弃，不落盘，您无需担心训练画面的留存问题。</p>
+      </div>
+
+      <div class="card">
+        <h2>数据保留与删除</h2>
+        <p>您可随时在 App 内删除单条或全部训练记录；删除后本设备上的记录即被移除，已同步到 iCloud 的记录也会随之移除。</p>
+        <p>写入 Apple 健康的数据由系统健康 App 管理，您可随时在健康 App 中查看或删除。</p>
+        <p>订阅与购买记录由 Apple App Store 管理，您可在「设置 &gt; 你的姓名 &gt; 订阅」中查看或取消订阅。</p>
+      </div>
+
+      <div class="card">
+        <h2>您的选择与权利</h2>
+        <p>您可通过系统设置随时管理摄像头权限、Apple 健康读写权限，也可在 App 设置中开启或关闭 iCloud 同步、语音播报、音效、骨架显示等功能。</p>
+        <p>本 App 未创建账户系统，因此无需、也不支持在 App 内注销账号；如需清除全部本地数据，可删除全部训练记录或卸载本 App。</p>
+      </div>
+
+      <div class="card">
+        <h2>儿童隐私</h2>
+        <p>本 App 面向一般健身用户，不针对未满 13 周岁的儿童提供服务，也不会刻意收集儿童的个人信息。</p>
+      </div>
+
+      <div class="card">
+        <h2>政策更新与联系我们</h2>
+        <p>若本政策发生实质性变更，我们会通过此页面展示最新版本，并保持本页内容与实际功能一致。</p>
+        <p>如需就隐私相关问题与我们联系，可通过 App Store 中的「App 支持」页面反馈。</p>
+      </div>
+
+      <p class="effective">生效日期：2026 年 9 月 4 日</p>
+    </div>
+
+    <!-- ================= 英文正文 ================= -->
+    <div lang="en">
+      <div class="card">
+        <h2>What Information We Collect</h2>
+        <p>Camera frames: used only to recognize and count your squats in real time. Frames are processed on-device, never uploaded, saved or shared, and are discarded once processed.</p>
+        <p>Workout records: including reps, duration, depth, average tempo and more. By default they are stored only on your device and used to show stats and achievements.</p>
+        <p>Body data: if you enter your weight in Settings, it is stored only on this device and used to estimate calories; it is never uploaded.</p>
+        <p>iCloud data: if you enable iCloud sync, workout records sync to your own private iCloud space for restoration and sharing across devices.</p>
+        <p>Purchase and subscription info: payments are processed by Apple App Store. We only learn your purchased plan status and never touch payment information.</p>
+        <p>Apple Health data: only when you enable writing do we record duration and calories to Apple Health — write-only, never reading back your history.</p>
+      </div>
+
+      <div class="card">
+        <h2>How We Use Your Data</h2>
+        <p>All data is used solely to provide counting, stats, achievements and history, and to improve the app. We do not use your data for advertising or profiling.</p>
+      </div>
+
+      <div class="card">
+        <h2>Sharing &amp; Transfer</h2>
+        <p>We do not sell, rent or share your data with any third party. Sync happens only if you enable it and goes through your own private iCloud space, which we cannot access.</p>
+        <p>If disclosure is required by law or a competent authority, we may disclose necessary information in accordance with applicable law, keeping the scope as limited as possible.</p>
+      </div>
+
+      <div class="card">
+        <h2>Storage &amp; Security</h2>
+        <p>Workout records and settings are stored on this device by default, protected by iOS and device security. If sync is enabled, iCloud data is protected by Apple's cloud security.</p>
+        <p>Camera frames are discarded immediately after local processing and never written to disk, so there is nothing to worry about retaining.</p>
+      </div>
+
+      <div class="card">
+        <h2>Retention &amp; Deletion</h2>
+        <p>You can delete individual or all workout records anytime; removing them also removes synced copies from iCloud.</p>
+        <p>Data written to Apple Health is managed by the Health app, where you can review or delete it at any time.</p>
+        <p>Subscription and purchase records are managed by the Apple App Store; you can view or cancel subscriptions under Settings &gt; Your Name &gt; Subscriptions.</p>
+      </div>
+
+      <div class="card">
+        <h2>Your Choices &amp; Rights</h2>
+        <p>You can manage camera permissions and Apple Health read/write settings via system Settings, and enable or disable iCloud sync, voice announcements, sound effects, and skeleton display in the app.</p>
+        <p>This app has no account system, so in-app account deletion is neither required nor supported. To clear all local data, delete all records or uninstall the app.</p>
+      </div>
+
+      <div class="card">
+        <h2>Children's Privacy</h2>
+        <p>This app is for general fitness users and is not directed at children under 13; we do not knowingly collect children's personal information.</p>
+      </div>
+
+      <div class="card">
+        <h2>Updates &amp; Contact</h2>
+        <p>If this policy changes materially, we will display the latest version on this page and keep it consistent with the app's actual behavior.</p>
+        <p>For privacy-related questions, you can reach us through the "App Support" page on the App Store.</p>
+      </div>
+
+      <p class="effective">Effective Date: September 4, 2026</p>
+    </div>
+
+    <p class="notif">本网页与 App 内「隐私政策」内容一致，用于上架审核信息展示。</p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[lang]').forEach(el => {
+        el.style.display = (el.getAttribute('lang') === lang) ? '' : 'none';
+      });
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    // 默认中文
+    setLang('zh');
+  </script>
+</body>
+</html>
